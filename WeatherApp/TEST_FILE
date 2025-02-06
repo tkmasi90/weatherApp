@@ -1,0 +1,11 @@
+{
+  "history": [],
+  "favorites": [],
+  "activeLocation": {
+    "name": "Tampere",
+    "lat": 61.4980214,
+    "lon": 23.7603118,
+    "country": "FI"
+  },
+  "unit": "metric"
+}

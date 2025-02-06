@@ -1,0 +1,405 @@
+
+* {
+    -fx-backg-color: #296387;
+    -fx-font-default-color: black;
+    -fx-primary-color: #d0e3eb;
+    -fx-secondary-color: #4B6EAF;
+    -fx-third-color: #F2F2F2;
+    -fx-focus-color: -fx-secondary-color;
+    -fx-p-width: 700;
+    -fx-icon-size: 24;
+    -fx-icon-padding: 0 0 0 10;
+    -fx-hbox-padding: 0 10 0 10;
+    -fx-label-padding: 0 0 0 5; 
+}
+
+/**/
+/* UICurrent css */
+/**/
+
+/*datetime*/
+
+.datetime-hbox {
+    -fx-pref-width: -fx-p-width;
+    -fx-background-color: transparent;
+    -fx-preferred-height: 50;
+    -fx-alignment: CENTER;
+    -fx-padding: 0 10 0 10;
+}
+
+.datetime-hbox .label {
+    -fx-font-size: 24;
+    -fx-text-alignment: CENTER;
+    -fx-font-family: "Lucinda Fax";
+}
+
+.datetime-hbox .image {
+    -fx-fit-height: -fx-icon-size;
+    -fx-fit-width: -fx-icon-size;
+}
+
+/*temp*/
+.temp-hbox {
+    -fx-pref-width: -fx-p-width;
+    -fx-background-color: transparent;
+    -fx-preferred-height: 80;
+    -fx-alignment: CENTER;
+}
+
+.temp-hbox .label {
+    -fx-font-size: 48;
+    -fx-font-family: "Lucinda Fax";
+}
+
+/*feelslike*/
+.feels-hbox {
+    -fx-pref-width: -fx-p-width;
+    -fx-background-color: transparent;
+    -fx-preferred-height: 25;
+}
+
+.feels-hbox .label {
+    -fx-font-size: 20;
+    -fx-text-alignment: CENTER;
+    -fx-margin: -15 0 0 0;
+    -fx-font-family: "Lucinda Fax";
+}
+
+/*SunsetRainandwind*/
+
+.srw-hbox {
+    -fx-pref-width: -fx-p-width;
+    -fx-background-color: transparent;
+    -fx-preferred-height: 50;
+    -fx-alignment: CENTER;
+    -fx-padding: 0 10 0 10;
+}
+
+.srw-hbox .label {
+    -fx-font-size: 20;
+    -fx-text-alignment: CENTER;
+    -fx-margin: -fx-label-padding;
+    -fx-font-family: "Lucinda Fax";
+}
+
+.srw-hbox .image-view {
+    -fx-margin: -fx-icon-padding;
+}
+
+/**/
+/* UIForecast css */
+/**/
+.hourly-hbox .label {
+	-fx-font-size: 14px;
+	-fx-alignment: CENTER;
+	-fx-text-alignment: CENTER;
+	-fx-font-family: 'Lucida Fax';
+	-fx-padding: 0 0 0 -6;
+}
+
+
+#singleHour {
+	-fx-padding: 8 8 8 8;
+	-fx-spacing: 16;
+}
+
+#hourlySide {
+	-fx-min-width: 40;
+	-fx-alignment: BOTTOM_CENTER;
+	-fx-spacing: 14;
+	-fx-padding: 0 0 25 0;
+}
+
+#dailyUnit {
+	-fx-font-size: 16px;
+	-fx-font-weight: bold;
+}
+
+.daily-hbox {
+	-fx-pref-width: 50;
+}
+
+.daily-hbox .label {
+	-fx-font-size: 16px;
+	-fx-text-alignment: CENTER;
+	-fx-font-family: 'Lucida Fax';
+	-fx-padding: 0 0 0 -6;
+}
+
+#singleDayBox {
+	-fx-alignment: CENTER;
+	-fx-padding: 10 0 10 0;
+}
+
+#singleDay {
+	-fx-padding: 8 8 8 8;
+	-fx-spacing: 16;
+}
+
+#iconBox {
+	-fx-alignment: CENTER_LEFT;
+	-fx-spacing: 15;
+}
+
+/*StackPane css*/
+
+.stack-pane {
+    -fx-pref-size: 1000 500;
+    -fx-padding: 10 10 10 10;
+    -fx-alignment: CENTER;
+}
+
+/* Charts css */
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+
+/* TempChart css */
+
+.temp-chart {
+    -fx-background-color: -fx-primary-color;
+    -fx-create-symbols: false;
+    -fx-pref-size: 1000 500;
+}
+.temp-chart .chart-horizontal-grid-lines {
+    -fx-stroke: rgb(149, 169, 170);
+
+}
+#temp-y {
+    -fx-pref-width: 35;
+    -fx-tick-mark-visible: false;
+    -fx-minor-tick-visible: false;
+}
+#temp-x {
+    -fx-pref-height: 50;
+    -fx-tick-mark-visible: false;
+    -fx-tick-labels-visible: true;
+}
+
+.temp-chart .chart-legend {
+    -fx-padding: 0 100 0 0;
+}
+
+
+/* RainChart css */
+
+.rain-chart {
+    -fx-background-color: transparent;
+    -fx-bar-gap: 0;
+    -fx-category-gap: 0;
+    -fx-pref-size: 1000 500;
+}
+#rain-y {
+    -fx-pref-width: 50;
+    -fx-tick-mark-visible: false;
+    -fx-minor-tick-visible: false;
+    -fx-side: RIGHT;
+}
+#rain-x {
+    -fx-pref-height: 50;
+    -fx-tick-mark-visible: false;
+    -fx-tick-labels-visible: false;
+}
+.rain-chart .chart-legend {
+    -fx-padding: 0 -100 0 0;
+}
+.default-color0.chart-bar {
+    -fx-bar-fill: #0011ff;
+    -fx-bar-width: 10;
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: #00e1ff;
+}
+
+/* TabPane css */
+
+.tab-header-area .tab-header-background {
+    -fx-background-color: -fx-primary-color;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: -fx-secondary-color;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-padding: 0 10 0 10;
+}
+    
+.tab-pane:top *.tab-header-area {
+    -fx-padding: 0 0 0 0;
+}
+
+.tab-pane {
+    -fx-background-color: -fx-primary-color;
+    -fx-tab-min-width: 100px;
+    -fx-tab-min-height: 30px;
+    -fx-tab-max-height: 30px;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+}
+
+.tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
+    -fx-border-width: 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-border-radius: 0;
+}
+
+/**/
+/* WeatherApp css */
+/**/
+
+/*centerVbox css*/
+
+#center-v-box {
+    -fx-pref-height: 300;
+	-fx-background-color: -fx-backg-color;
+}
+
+/*topVbox css*/
+
+#top-v-box {
+    -fx-background-color: -fx-backg-color;
+	-fx-padding: 0 8 8 8;
+}
+#top-h-box {
+	-fx-padding: -4 8 0 -8;
+}
+
+/*SearchBar css*/
+
+#search-h-box {
+    -fx-padding: 0 8 8 8;
+    -fx-pref-height: 50;
+    -fx-spacing: 5;
+    -fx-alignment: CENTER;
+}
+
+#search-button {
+    -fx-cursor: HAND;
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-background-color: white;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+    -fx-border-color: black;
+    -fx-border-radius: 5em;
+}
+
+#search-field {
+    -fx-font-family: "Arial";
+    -fx-font-size: 16;
+    -fx-padding: 0 0 0 15;
+    -fx-max-height: 30;
+    -fx-min-width: 200;
+    -fx-max-width: 400;
+    -fx-background-radius: 5em;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5em;
+}
+
+#city-name {
+    -fx-font-size: 30;
+    -fx-font-family: "Inter";
+    -fx-text-fill: white;
+}
+
+/*FormatSwitch*/
+
+#unit-switch-hbox {
+    -fx-pref-height: 20;
+}
+
+#unit-switch-hbox .label {
+    -fx-font-size: 16;
+    -fx-font-family: "Lucinda Fax";
+    -fx-text-fill: white;
+}
+#celsius-label {
+    -fx-padding: 0 0 0 3;
+}
+#fahrenheit-label {
+    -fx-padding: 0 -10 0 5;
+}
+
+#toggle-switch {
+    -fx-pref-height: 26;
+    -fx-padding: 0 0 0 5;
+    -fx-cursor: HAND;
+}
+
+/*History*/
+
+#history-label {
+	-fx-font-size: 20;
+    -fx-font-family: "Inter";
+    -fx-text-fill: white;
+}
+
+/*Favorites*/
+
+#favorite-label {
+	-fx-font-size: 20;
+    -fx-font-family: "Inter";
+    -fx-text-fill: white;
+}
+
+#favorite-button {
+    -fx-cursor: HAND;
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-background-color: white;
+    -fx-background-insets: 0px;
+    -fx-border-color: black;
+    -fx-border-radius: 5em;
+}
+
+#favorites-hbox {
+    -fx-padding: 0 0 0 15;
+    -fx-spacing: 15;
+}
+
+/**/
+/*LeafletMaps*/
+/**/
+
+#mapbox {
+    -fx-pref-size: 1000 700;
+}
+
+#mapview {
+    -fx-pref-size: 1000 700;
+}

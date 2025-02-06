@@ -1,0 +1,13 @@
+stages:
+  - build
+
+image:
+  name: "maven:3.8.4-openjdk-17"
+
+build:
+  stage: build
+  tags:
+    - compcs140
+  script:
+    - cd WeatherApp/
+    - mvn compile
